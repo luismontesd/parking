@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--Ancho del dispositivo, no permite escalar-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtsRprziIxG4nRzFBixVhtkYVcJrb40Bo"></script>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <script src="funciones.js"></script>
+    <script>window.addEventListener('load',comprobar,true);</script>
+</head>
+<body>
+    <div class="encabezado" id="mapa1">
+        <img src="logo-banco.png" id="imgUser">
+        <h1>Parking</h1>
+    </div>
+    <div class="alerta">
+        <h1 id="alerta-titulo"></h1>
+        <p id="alerta-mensaje"></p>
+    </div>
+    <div class="mapa" id="mapa"></div>
+    <div class="menu">
+        <div class="opciones">
+            <div class="usuario" onclick="navegar('perfil')"><img src="usuario.png"></div>
+            <div class="nuevoLugar" onclick="geolocalizar()"><img src="nuevolugar.png"></div>
+            <div class="navegar" onclick="mostrarMapa()"><img src="navegar.png"></div>
+            <div class="salir" onclick="salir()"><img src="salir.png"></div>
+        </div>
+    </div>
+</body>
+</html>

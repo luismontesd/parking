@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--Ancho del dispositivo, no permite escalar-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <video src="fondo2.mp4" autoplay muted loop class="fondo"></video>
+
+    <div class="encabezadoSesion">
+        <img src="logo2.png" class="logoSesion">
+        
+        
+        <section>
+        <h1>Parking</h1>
+        <h2>Iniciar Sesion</h2>
+        <input type="text" placeholder="Correo" id="correoSesion">
+        <input type="password" placeholder="Contraseña" id="contrasenaSesion">
+        <button onclick="recuperarDatos()">Iniciar</button>
+        <button onclick="navegar('registro')">Registrar</button>
+        </section>
+        
+    </div>
+</body>
+</html>

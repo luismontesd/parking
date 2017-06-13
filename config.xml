@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.helloworld"
+        version   = "1.0.0">
+
+    <name>PARKING</name>
+
+    <description>
+       Esta app te ayudaraa encontrar tu auto.
+    </description>
+
+    <author email="lluismontes655@gmail.com">
+        Luis Angel Montes de Oca Ruiz
+    </author>
+    <preference name="orientation"                value="portrait" />
+    <preference name="fullscreen"                 value="true" />
+
+    <!-- Plugins -->
+
+    <!-- Core plugins -->
+    <plugin name="cordova-plugin-geolocation" />
+    <plugin name="cordova-plugin-vibration" />
+
+    <icon src="icono.png" />
+
+    <access origin="*"/>
+
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+</widget>
+

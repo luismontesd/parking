@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--Ancho del dispositivo, no permite escalar-->
+    <meta name="viewport" content="width=device-width">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <div class="encabezadoReg">
+        <input type="button" class="btnReg" onclick="navegar('iniciosesion')" value="Regresar">
+        <br>
+        <img src="logo-banco.png" id="imgUser">
+        <h1>Parking</h1>
+        
+        
+        <div class="ingresarDatos">
+            <p>Nombre del Usuario</p>
+            <input type="text" class="box" id="nombre">
+        
+        <br><br>
+            
+        <p>Correo Electronico</p>
+            <input type="text" class="box" id="correo">
+        
+        <br><br>
+            
+            
+            
+            <p>Automovil Modelo</p>
+            <select class="lista1" id="modelo">
+            <option value="sentra">Nissan Sentra</option> 
+            <option value="jetta">VW Jetta</option> 
+            <option value="mini">Cooper Mini</option>
+            <option value="march">Nissan March</option> 
+            <option value="corolla">Toyota Corolla</option> 
+            <option value="spark">Chevrolet Spark</option> 
+</select>
+            <p>Año</p>
+            <select class="lista2" id="anio">
+            <option value="2000">2000</option> 
+            <option value="2001">2001</option> 
+            <option value="2002">2002</option>
+            <option value="2003">2003</option> 
+            <option value="2004">2004</option> 
+            <option value="2005">2005</option>    
+            <option value="2006">2006</option> 
+            <option value="2007">2007</option> 
+            <option value="2008">2008</option> 
+            <option value="2009">2009</option> 
+            <option value="2010">2010</option> 
+            <option value="2011">2011</option> 
+            <option value="2012">2012</option> 
+</select>
+            <br><br>
+        
+        <p>Contraseña</p>
+            <input type="password" class="box" id="contrasena">
+            
+        
+        <br><br>
+        <p>Confirmar contraseña</p>
+            <input type="password" class="box" id="conContrasena">
+        
+        <br>
+            
+            
+        
+    </div>
+        
+        <input type="button" value="Aceptar" class="btn" id="btn" onclick="guardar()">
+        
+    </div>
+    
+    
+    
+</body>
+</html>

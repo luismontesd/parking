@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/*
+Colores
+azul oscuro: #085079
+azul claro: #4C99C5
+amarillo: #C5C10D
+rojo: #860E13
+verde: #46450C
+
+
+*/
+.encabezado{
+    height: calc(100% - 90%);
+    width: 100%;
+    background-color: #085079;
+}
+
+.encabezado>img{
+    height: 50px;
+    position: fixed;
+    margin: 5px;
+    margin-left: 10px;
+}
+.encabezado>h1{
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+}
+.mapa{
+    width: 100%;
+    height: calc(100% - 20%);
+    background-image: url("mapa.png");
+}
+.alerta{
+    width: 100%;
+    height: 100px;
+    background-color: #860E13;
+    position: fixed;
+    left: 0px;
+    top: -200px;
+    z-index: 9999999999;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,.5);
+    transition: .4s all;
+}
+.ver{
+    top:0px;
+}
+#alerta-titulo{
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    font-weight: 300;
+}
+#alerta-mensaje{
+    text-align: center;
+    font-size: 1.0em;
+    color: white;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+.opciones{
+    margin-left: calc(75% - 260px);/*pendiente*/
+}
+.menu{
+    width: 100%;
+    height: calc(100% - 90%);
+}
+.menu>div>div{
+    box-sizing: border-box;
+    float: left;
+    margin-left: 15px;
+    height: 100%;
+}
+.usuario:hover, .navegar:hover, .salir:hover{
+    height: calc(100% - 90%);
+    background:rgba(8,80,121,.9);
+}
+.menu>div>div>img{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    position:relative;
+    
+}
+/*---------------------------------------------- INICIO DE SESION -------------------------------------------------------------------*/
+
+.fondo{
+    float: left;
+}
+
+.encabezadoSesion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+section>h1{
+    color: #12A3D7;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.logoSesion{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    margin-left: 16%;
+}
+
+section{
+    float: left;
+    margin-top: 50px;
+    background-color:rgba(255,255,255,.50);
+    padding-bottom: 15px;
+}
+
+section>h2{
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.5em;
+    color:rgb(0,0,0);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+section>input{
+    width: 70%;
+    margin-left: 50px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 1em;
+    background-color: white;
+    outline: none;
+    float: left;
+}
+
+section>input[type="number"]{
+    width: calc (50% - 15px);
+}
+
+section>button {
+    float: right;
+    margin-right: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+    margin-top: 10px;
+    width: calc(50% - 10px);
+    background-color: #12A3D7;
+    color: white;
+    outline: none;
+    position: relative;
+}
+
+/*-------------------------------------------------REGISTRO----------------------------------------------------------*/
+
+.encabezadoReg{
+    
+    width: 100%;
+    /*position: absolute;*/
+    width: 100%;
+    /*height: calc(100% - 20%);*/
+    background: -webkit-linear-gradient(90deg, #3498db, #085079);
+}
+
+.encabezadoReg>img{
+    height: 100px;
+    align-items: center;
+    position: absolute;
+    padding-top: 50px;
+    margin-left: 37%;
+    
+}
+.encabezadoReg>h1{
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.ingresarDatos{
+    width: 75%;
+    align-content: center;
+    margin-left: 5%;
+    
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.2);
+    
+    
+    
+}
+
+.lista1{
+    
+    border-radius: 8px;
+    height: 30px;
+    align-content: flex-start;
+    
+}
+.lista2{
+    
+    border-radius: 8px;
+    height: 30px;
+    align-content: flex-end;
+    
+}
+.ingresarDatos>p{
+    color: white;
+}
+
+.box{
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.btn{
+    width: 90%;
+    height: 40px;
+    margin-left: 22px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    font-size: 1.5em;
+}
+
+.btnReg{
+    
+    margin-left: 22px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+    font-size: 1.2em;
+}
+.inicio{
+    width: 100%;
+    height: calc(100% - 20%);
+    background: -webkit-linear-gradient(90deg, #3498db, #085079);
+}
+
+.datos{
+    width: 50%;
+    height: 60%;
+    margin-left:10%;
+    padding: 15%;
+    border-radius: 5px;
+    background: rgba(255,255,255,.1);
+}
+.datos h1{
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    
+}
+.datos>h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 1px;
+    font-size: 1em;
+}
+
+.datos>p{
+    color: white;
+    font-size: 1em;
+    text-align: left;
+}
+.datos>p>b{
+    color: whitesmoke;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1px;
+    margin-left: 10px;
+}
+.sesion{
+    width: 100%;
+    position: fixed;
+    height: calc(100% - 20%);
+    background: -webkit-linear-gradient(90deg, #3498db, #085079);
+}
+
+.datoSesion{
+    width: 50%;
+    height: 60%;
+    margin-left:10%;
+    margin-top: 10%;
+    padding: 15%;
+    border-radius: 5px;
+    background: rgba(255,255,255,.1);
+}
+.datoSesion h1{
+    color: aliceblue;
+    text-align: center;
+}
